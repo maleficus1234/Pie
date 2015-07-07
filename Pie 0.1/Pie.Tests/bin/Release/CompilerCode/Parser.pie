@@ -1,0 +1,10 @@
+﻿import Pie.Expressions
+
+namespace Pie:
+
+	abstract class Parser:
+
+		abstract Parse(Root root, String text):
+		
+		shared Parser Create():
+			return Pie.IronyParsing.IronyParser()
